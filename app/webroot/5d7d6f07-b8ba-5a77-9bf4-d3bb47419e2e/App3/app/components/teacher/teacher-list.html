@@ -1,0 +1,25 @@
+<div> 
+                         <nav class="navbar navbar-default" style="width:1365px;margin-top:-75px">
+                                   <div class="container-fluid">
+                                     <div class="navbar-header" >
+                                       <h3 style="margin-left:550px">Instant Web</h3>
+                                     </div>
+                                   </div>
+                                 </nav>
+                                 <div style="margin-top:150px;margin-left:350px">
+                                 <a class="btn btn-success" href="#/teacher/new">  
+                                 <i class="fa fa-plus"></i>Add</a></div> 
+                                 <div><br />  
+                                 <table class="table table-bordered text-center" style="margin-left:350px"> <tr> 
+                                 <th><th>id</th><th>username</th><th>email</th><th>password</th></th> 
+                                     <th>Details</th><th>Edit</th><th>Delete</th></tr>
+                                 <tr *ng-for="var item of list"> 
+                                 <td><th>{{item.id}}</th><th>{{item.username}}</th><th>{{item.email}}</th><th>{{item.password}}</th></td><td> 
+                                     <a class="btn btn-primary detailsBtn" href="#/teacher/{{item.id}}"> Details</a></td> 
+                                     <td> 
+                                     <a class="btn btn-warning editBtn" href="#/teacher/{{item.id}}/edit">Edit</a></td>
+                                     <td>  
+                                         <a class="btn btn-danger deleteBtn" href="#/teacher/{{item.id}}/delete">Delete</a></td></tr> 
+                                     </table> 
+                                     </div></div> 
+                                   

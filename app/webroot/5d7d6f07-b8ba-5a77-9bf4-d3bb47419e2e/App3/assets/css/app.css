@@ -1,0 +1,45 @@
+﻿.a0-footer .a0-logo {
+    display: none !important;
+}
+
+table.text-center th, table.text-center td {
+    text-align: center !important;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.animLine {
+    display: none;
+    margin-bottom: 20px;
+    height: 2px;
+    background-color: #286090;
+    width: 0;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+}
+
+#loading-bar .bar {
+    background: #9c27b0;
+    height: 3px;
+}
+
+.no-border.table > thead > tr > th,
+.no-border.table > tbody > tr > th,
+.no-border.table > tfoot > tr > th,
+.no-border.table > thead > tr > td,
+.no-border.table > tbody > tr > td,
+.no-border.table > tfoot > tr > td {
+    vertical-align: middle;
+    border-top: none;
+}
+.pagination a{
+    cursor:pointer!important;
+}

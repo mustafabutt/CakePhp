@@ -1,0 +1,18 @@
+<div> 
+                                 <a class="btn btn-success" ng-href="#/user/new">  
+                                 <i class="fa fa-plus"></i>Add</a></div> 
+                                 <div><br />  
+                                 <table class="table table-bordered text-center"> <tr> 
+                                 <th>				<th>id</th>				<th>first_name</th>				<th>last_name</th></th> 
+                                     <th>Details</th><th>Edit</th><th>Delete</th></tr>
+                                 <tr ng-repeat="item in vm.list"> 
+                                 <td><th>{{item.id}}</th><th>{{item.first_name}}</th><th>{{item.last_name}}</th></td><td> 
+                                     <a class="btn btn-primary detailsBtn" ng-href="#/user/{{item.id}}"> Details</a></td> 
+                                     <td> 
+                                     <a class="btn btn-warning editBtn" ng-href="#/user/edit/{{item.id}}">Edit</a></td>
+                                     <td>  
+                                         <a class="btn btn-danger deleteBtn" ng-href="#/user/delete/{{item.id}}">Delete</a></td></tr> 
+                                             <td>
+                                     </table> 
+                                     </div> 
+                                   
